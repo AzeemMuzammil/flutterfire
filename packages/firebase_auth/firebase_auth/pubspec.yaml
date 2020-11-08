@@ -9,8 +9,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: io.flutter.plugins.firebase.auth
-        pluginClass: FlutterFirebaseAuthPlugin
+        default_package: firebase_rest_auth
       ios:
         pluginClass: FLTFirebaseAuthPlugin
       macos:
@@ -19,6 +18,8 @@ flutter:
         default_package: firebase_auth_web
 
 dependencies:
+  firebase_rest_auth: ^0.3.0
+
   meta: ^1.0.4
   firebase_core: ^0.5.2
   firebase_core_platform_interface: ">=2.0.0 <2.1.0"
